@@ -61,6 +61,10 @@ io.on('connection', (socket) => {
     io.to(code).emit('updateLobbyPlayers', Object.values(room.players));
   }
 
+app.get('/', (req, res) => {
+  res.send('Zombie-X Multiplayer Server Aktif ve Çalışıyor! 🧟‍♂️');
+});
+  
   // Oyunu Başlatma (Sadece Host)
   socket.on('startGame', () => {
     const room = LOBBIES[socket.currentRoom];
