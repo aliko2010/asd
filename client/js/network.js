@@ -1,6 +1,6 @@
 // client/js/network.js
 // Render sunucu URL'inizi buraya yazacaksınız:
-const SERVER_URL = "https://zombiex-backend.onrender.com"; 
+const SERVER_URL = "https://ananizombi11.onrender.com/"; 
 const socket = io(SERVER_URL);
 
 let currentLobby = null;
